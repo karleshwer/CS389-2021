@@ -1,20 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/eukrissongahid/Downloads/android-fundamentals-starter-apps-v2-master/MaterialMe-Starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c7b215a0c5675d266f111f0f2e19d0e9/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\src\\main\\res\\values-sw600dp\\integers.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "672",
+                        "endColumns": "49",
+                        "endOffsets": "717"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "1233",
+                        "endColumns": "49",
+                        "endOffsets": "1278"
                     }
                 },
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/6fa4d21724edd81507c0e30d1b15ac1a/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\eb606fc3ec1b71ba4551f78a54e5787c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -24,12 +31,41 @@
                         "endOffsets": "110,180,251,323,381,439,545,609,672,854"
                     },
                     "to": {
-                        "startLines": "10,11,12,13,14,15,16,17,18,19",
+                        "startLines": "10,11,12,13,14,15,16,17,18,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1106,1170,1233",
-                        "endLines": "10,11,12,13,14,15,16,17,18,22",
+                        "startOffsets": "611,671,741,812,884,942,1000,1106,1170,2083",
+                        "endLines": "10,11,12,13,14,15,16,17,18,37",
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
+                        "endOffsets": "666,736,807,879,937,995,1101,1165,1228,2260"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\src\\main\\res\\values-sw600dp\\styles.xml",
+                    "from": {
+                        "startLines": "19,26,32,28",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "709,1029,1271,1111",
+                        "endLines": "24,26,35,30",
+                        "endColumns": "12,80,12,12",
+                        "endOffsets": "1023,1105,1508,1265"
+                    },
+                    "to": {
+                        "startLines": "20,26,27,31",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1283,1602,1682,1924",
+                        "endLines": "25,26,30,33",
+                        "endColumns": "12,79,12,12",
+                        "endOffsets": "1597,1677,1919,2078"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\956b37418ab6cf7393919ff706aed98e\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
                     }
                 }
             ]

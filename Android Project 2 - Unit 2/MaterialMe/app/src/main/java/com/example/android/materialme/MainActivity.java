@@ -19,7 +19,7 @@ package com.example.android.materialme;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
@@ -28,11 +28,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /***
- * Main Activity for the Material Me app, a mock sports news application
- * with poor design choices.
+ * Main Activity for the Material Me app, a mock sports news application.
  */
 public class MainActivity extends AppCompatActivity {
 
+    // Member variables.
     private RecyclerView mRecyclerView;
     private ArrayList<Sport> mSportsData;
     private SportsAdapter mAdapter;
@@ -42,38 +42,59 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialize the RecyclerView.
         mRecyclerView = findViewById(R.id.recyclerView);
 
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        // Get the appropriate column count.
+        int gridColumnCount = getResources().getInteger(R.integer.grid_column_count);
 
+        // Set the Layout Manager.
+        mRecyclerView.setLayoutManager(new GridLayoutManager(
+                this, gridColumnCount));
+
+        // Initialize the ArrayList that will contain the data.
         mSportsData = new ArrayList<>();
 
+        // Initialize the adapter and set it to the RecyclerView.
         mAdapter = new SportsAdapter(this, mSportsData);
         mRecyclerView.setAdapter(mAdapter);
 
+        // Get the data.
         initializeData();
 
+        // If there is more than one column, disable swipe to dismiss
+        int swipeDirs;
+        if(gridColumnCount > 1){
+            swipeDirs = 0;
+        } else {
+            swipeDirs = ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
+        }
+
+        // Helper class for creating swipe to dismiss and drag and drop
+        // functionality
         ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper
                 .SimpleCallback(
-                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT |
-                        ItemTouchHelper.DOWN | ItemTouchHelper.UP,
-                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+                  ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT | 
+                  ItemTouchHelper.DOWN | ItemTouchHelper.UP,
+                swipeDirs) {
             /**
              * Defines the drag and drop functionality.
              *
-             * @param recyclerView The RecyclerView that contains the list items
-             * @param viewHolder The SportsViewHolder that is being moved
+             * @param recyclerView The RecyclerView that contains the list items.
+             * @param viewHolder The SportsViewHolder that is being moved.
              * @param target The SportsViewHolder that you are switching the
              *               original one with.
-             * @return true if the item was moved, false otherwise
+             * @return returns true if the item was moved, false otherwise
              */
             @Override
             public boolean onMove(RecyclerView recyclerView,
                                   RecyclerView.ViewHolder viewHolder,
                                   RecyclerView.ViewHolder target) {
+                // Get the from and to positions.
                 int from = viewHolder.getAdapterPosition();
                 int to = target.getAdapterPosition();
 
+                // Swap the items and notify the adapter.
                 Collections.swap(mSportsData, from, to);
                 mAdapter.notifyItemMoved(from, to);
                 return true;
@@ -88,11 +109,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder,
                                  int direction) {
+                // Remove the item from the dataset.
                 mSportsData.remove(viewHolder.getAdapterPosition());
+                // Notify the adapter.
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
             }
         });
 
+        // Attach the helper to the RecyclerView.
         helper.attachToRecyclerView(mRecyclerView);
     }
 
@@ -100,22 +124,28 @@ public class MainActivity extends AppCompatActivity {
      * Initialize the sports data from resources.
      */
     private void initializeData() {
+        // Get the resources from the XML file.
         String[] sportsList = getResources()
                 .getStringArray(R.array.sports_titles);
         String[] sportsInfo = getResources()
                 .getStringArray(R.array.sports_info);
-        TypedArray sportsImageResources = getResources()
-                .obtainTypedArray(R.array.sports_images);
+        TypedArray sportsImageResources =
+                getResources().obtainTypedArray(R.array.sports_images);
 
+        // Clear the existing data (to avoid duplication).
         mSportsData.clear();
 
+        // Create the ArrayList of Sports objects with the titles and
+        // information about each sport.
         for (int i = 0; i < sportsList.length; i++) {
             mSportsData.add(new Sport(sportsList[i], sportsInfo[i],
                     sportsImageResources.getResourceId(i, 0)));
         }
 
+        // Recycle the typed array.
         sportsImageResources.recycle();
 
+        // Notify the adapter of the change.
         mAdapter.notifyDataSetChanged();
     }
 
@@ -127,5 +157,4 @@ public class MainActivity extends AppCompatActivity {
     public void resetSports(View view) {
         initializeData();
     }
-
 }

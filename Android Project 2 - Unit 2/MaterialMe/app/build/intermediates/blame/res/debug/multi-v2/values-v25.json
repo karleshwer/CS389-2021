@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/eukrissongahid/Downloads/android-fundamentals-starter-apps-v2-master/MaterialMe-Starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c7b215a0c5675d266f111f0f2e19d0e9/res/values-v25/values-v25.xml",
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\956b37418ab6cf7393919ff706aed98e\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

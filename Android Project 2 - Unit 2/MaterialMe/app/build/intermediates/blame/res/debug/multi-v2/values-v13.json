@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\956b37418ab6cf7393919ff706aed98e\\res\\values-v13\\values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        }
+    ]
+}

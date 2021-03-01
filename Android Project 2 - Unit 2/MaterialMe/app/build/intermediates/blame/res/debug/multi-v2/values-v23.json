@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/eukrissongahid/Downloads/android-fundamentals-starter-apps-v2-master/MaterialMe-Starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/e1359e9a48ed69a028245e2d68dd61dd/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-26.1.0.aar\\7b918260829e78735bab1c384d0b0c63\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c7b215a0c5675d266f111f0f2e19d0e9/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\956b37418ab6cf7393919ff706aed98e\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

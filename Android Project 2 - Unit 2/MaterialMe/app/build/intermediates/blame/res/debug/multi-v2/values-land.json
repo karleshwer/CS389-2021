@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/eukrissongahid/Downloads/android-fundamentals-starter-apps-v2-master/MaterialMe-Starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c7b215a0c5675d266f111f0f2e19d0e9/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\956b37418ab6cf7393919ff706aed98e\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/eukrissongahid/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/6fa4d21724edd81507c0e30d1b15ac1a/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\Omni\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\eb606fc3ec1b71ba4551f78a54e5787c\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -24,12 +24,29 @@
                         "endOffsets": "232"
                     },
                     "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "378",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "555"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Omni\\Downloads\\Compressed\\android-fundamentals-apps-v2-master\\android-fundamentals-apps-v2-master\\05.3 Adaptive layouts\\app\\src\\main\\res\\values-land\\integers.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "672",
+                        "endColumns": "49",
+                        "endOffsets": "717"
+                    },
+                    "to": {
                         "startLines": "6",
                         "startColumns": "4",
                         "startOffsets": "328",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "505"
+                        "endColumns": "49",
+                        "endOffsets": "373"
                     }
                 }
             ]
