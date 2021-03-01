@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ADF2.1 Two Activities</string>
+    <string name="message_received">Message Received</string>
+    <string name="editText_main">Enter Your Message here</string>
+    <string name="reply_button">Reply</string>
+    <string name="editText_reply">Enter Your Reply Here</string>
+    <string name="text_header_reply">Reply Received</string>
+</resources>
